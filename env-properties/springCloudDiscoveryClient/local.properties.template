@@ -1,0 +1,35 @@
+db.jdbc.url=jdbc:mysql://<DB IP>:<DB Port>/<DB Server>?zeroDateTimeBehavior=convertToNull&useUnicode=true&characterEncoding=utf8&autoReconnect=true
+db.user=<DB User>
+db.password=<DB Password>
+db.pool.max.wait=20
+db.pool.max.active=50
+db.show.sql=<Show JPAQA or not - true/false>
+
+server.port=<HTTP Port of tomcat>
+
+logger.file.path=<Log file path>
+logger.file.app.rollover.days=<No of days app logs will be archived>
+logger.file.lib.rollover.days=<No of days lib logs will be archived>
+logger.file.app.rollover.size=<Size app logs after which it will roll over>
+logger.file.lib.rollover.size=<Size lib logs after which it will roll over>
+
+logger.file.archive.cleanup.days=<No of days after which archived will be cleaned up>
+
+logger.lib.level=<Log level of Lib>
+logger.app.level=<Log level of app>
+
+application.name=notification
+
+redis.host=<IP of redis server>
+redis.port=<Port of redis server>
+
+mail.host=<SMTP Server>
+mail.port=<SMTP Port>
+mail.template.path=<Relative location of classpath>/
+
+cms.url=<URL of CMS>
+slack.url=<URL of Slack incoming hook of team>
+
+message.slack.file=<Classpath location of slack message properties file>
+message.ui.file=<Classpath location of UI message properties file>
+message.error.file=<Classpath location of error message properties file>

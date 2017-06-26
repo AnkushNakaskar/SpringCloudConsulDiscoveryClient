@@ -1,0 +1,7 @@
+.classpath
+.project
+.gradle/
+.settings/
+bin/com/spring/cloud/consul/discovery/SpringCloudServiceWithConsulDiscoveryApplication.class
+build/
+bin/com/spring/cloud/consul/discovery/controller/PersonClientController.class

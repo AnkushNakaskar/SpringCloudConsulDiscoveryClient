@@ -1,0 +1,18 @@
+spring:
+  jackson:
+    serialization-inclusion: NON_EMPTY
+  application:
+    name: '@application.name@'
+  cloud:
+    consul:
+        host: localhost
+        port: 8500
+        discovery:
+          healthCheckPath: '@health.url@'      
+endpoints:
+  health:
+    sensitive: false
+    time-to-live: 100
+server:
+  contextPath: /springCloudDiscoveryClient
+  port: '@server.port@'
